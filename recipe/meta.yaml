@@ -1,4 +1,4 @@
-{% set version = '1.0' %}
+{% set version = "1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nsga2R_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nsga2R/nsga2R_{{ version }}.tar.gz
-  sha256: 1d3a8b1a94cd647e49ad8097cf553f998d41532f341af2362283391d87025212
+  sha256: 645111e633b5cd5b512e05ec9b943349c409fef6f8cf2ae81ae19958439b73ac
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -38,13 +38,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=nsga2R
   license: LGPL-3.0-only
-  summary: This package provide functions for box-constrained multiobjective optimization using
-    the elitist non-dominated sorting genetic algorithm - NSGA-II. Fast non-dominated
-    sorting, crowding distance, tournament selection, simulated binary crossover, and
-    polynomial mutation are called in the main program, nsga2R, to complete the search.
+  summary: This package provide functions for box-constrained multiobjective optimization using the elitist non-dominated sorting genetic algorithm - NSGA-II. Fast non-dominated sorting, crowding distance, tournament selection, simulated binary crossover, and polynomial mutation are called in the main program, nsga2R, to
+    complete the search.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
