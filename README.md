@@ -1,11 +1,11 @@
-About r-nsga2r
-==============
+About r-nsga2r-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nsga2r-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=nsga2R
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nsga2r-feedstock/blob/main/LICENSE.txt)
 
 Summary: This package provide functions for box-constrained multiobjective optimization using the elitist non-dominated sorting genetic algorithm - NSGA-II. Fast non-dominated sorting, crowding distance, tournament selection, simulated binary crossover, and polynomial mutation are called in the main program, nsga2R, to complete the search.
 
